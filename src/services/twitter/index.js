@@ -1,4 +1,4 @@
-import TwitterService from '../tweets/TwitterService';
+import TwitterService from './TwitterService';
 
 const { tweetThreaderHome } = CONFIG.server;
 

@@ -1,19 +1,13 @@
 import TwitterService from '../../services/twitter';
 import types from './types';
 
-const init = (credentials = null) => async dispatch => {
+const init = () => async dispatch => {
     dispatch({
         type: types.INIT_REQUEST
     });
-
-    try {
-
-    } catch (error) {
-
-    }
 };
 
-const login = (email, password) => async dispatch => {
+const login = () => async dispatch => {
     dispatch({
         type: types.LOGIN_REQUEST
     });
@@ -56,8 +50,8 @@ const getTwitter = () => async dispatch => {
         const twitter = await TwitterService.getHomeTimeline();
         dispatch({
             type: types.GET_TWITTER_SUCCESS,
-            payload: { profile }
-        })
+            payload: { twitter }
+        });
     } catch (error) {
         dispatch({
             type: types.GET_TWITTER_FAILURE,
