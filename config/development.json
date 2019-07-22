@@ -1,0 +1,5 @@
+{
+    "server": {
+        "tweetThreaderHome": "http://localhost:8081/api/tweetThreader/v1"
+    }
+}

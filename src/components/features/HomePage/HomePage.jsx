@@ -1,10 +1,12 @@
 import React from 'react';
+import HomeTimeline from '../HomeTimeline/HomeTimeline';
 
 class Homepage extends React.Component {
     render() {
         return (
             <div className="Homepage">
-                Homepage here.
+                <p>Homepage here</p>
+                <HomeTimeline />
             </div>
         );
     }
